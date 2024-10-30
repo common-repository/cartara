@@ -1,0 +1,462 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+.admin_output{
+    display: none;
+}
+.text-box-row h4 {
+    text-align: center !important;
+}
+.text-box-row h4 a {
+    text-decoration: none;
+} 
+.col-sm-4.s_grid {
+    width: 29.333333%;
+    display: inline-block;
+    padding: 0 15px;
+}
+.welcome-panel p {
+    color: #72777c;
+    text-align: justify;
+}
+.progress {
+    display: block;
+    text-align: center;
+    width: 0;   
+    height: 3px;
+    background: red;
+    transition: width .3s;
+}
+.progress.hide {
+    opacity: 0;
+    transition: opacity 1.3s;
+}
+
+/********add api_setting css here*/
+
+body {
+    background: #f1f1f1;
+}
+.panel-default>.panel-heading {
+    color: #333;
+    background-color: #fff;
+    border-color: #e4e5e7;
+    padding: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.panel-default>.panel-heading a {
+    display: block;
+    padding: 8px 15px;
+    font-size: 14px;
+    color:black;
+}
+.panel-default>.panel-heading a:hover{
+    text-decoration: none;
+}
+.panel-default>.panel-heading a:focus {
+    text-decoration: none;
+}
+.wp-person a:focus .gravatar, a:focus, a:focus .media-icon img {
+    color: #124964;
+    box-shadow: none;
+    outline: 0 !important;
+}
+.panel-default>.panel-heading a:after {
+    content: "";
+    position: relative;
+    top: 5px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    float: right;
+    transition: transform .25s linear;
+    -webkit-transition: -webkit-transform .25s linear;
+}
+
+.panel-default>.panel-heading a[aria-expanded="true"] {
+    background-color: #fff;
+}
+
+.panel-default>.panel-heading a[aria-expanded="true"]:after {
+    width: 0;
+    height: 0;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+    color:black;
+}
+
+.panel-default>.panel-heading a[aria-expanded="false"]:after {
+    width: 0;
+    height: 0;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-bottom: .3em solid;
+    border-right: .3em solid transparent;
+    border-top: 0;
+    border-left: .3em solid transparent;
+    color:black;
+
+}
+
+.accordion-option {
+    width: 100%;
+    float: left;
+    clear: both;
+    margin: 15px 0;
+}
+
+.accordion-option .title {
+    font-size: 20px;
+    font-weight: bold;
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+
+.accordion-option .toggle-accordion {
+    float: right;
+    font-size: 16px;
+    color: #6a6c6f;
+}
+
+.accordion-option .toggle-accordion:before {
+    content: "Expand All";
+}
+
+.accordion-option .toggle-accordion.active:before {
+    content: "Collapse All";
+}
+.col-sm-8 .form-control{
+    width: 90%;
+}
+.col-sm-8 input{
+    margin-top: 40px;
+}
+.col-sm-8 textarea{
+    margin-top: 20px;
+}
+.panel-body{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.button .button-large {
+    alignment-adjust: central;
+}
+input#save {
+    margin-top: 20px;
+}
+/********add api_setting css end here************/
+
+/********show dashboard page css here************/
+body {
+    background: #f1f1f1;
+}
+
+.wrap h1 {
+    font-size: 23px;
+    font-weight: 400;
+    margin: 0;
+    padding: 9px 0 4px;
+    line-height: 29px;
+}
+
+.welcome-panel {
+    position: relative;
+    overflow: auto;
+    margin: 16px 0;
+    padding: 23px 10px 0;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    background: #fff;
+    font-size: 14px;
+    line-height: 2.1em;
+}
+
+.text-box-row {
+    display: inline-block;
+    width: 100%;
+} 
+.btn-twitter {
+    background: #00ACEE; 
+    color: #fff;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #0075a2;
+}
+.btn-twitter:link, .btn-twitter:visited {
+    color: #fff;
+}
+
+.btn-twitter:active, .btn-twitter:hover {
+    background: #0075a2;
+    color: #fff;
+}
+.s_grid{
+
+}
+.s_grid img {
+    width: 100px;
+    margin: auto;
+    display: block;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    border: 1px solid #cccccc47;
+    padding: 6px;
+}
+/********* tab view css*/
+
+body{
+    background:#f1f1f1;
+} 
+.wrap h1{
+    font-size: 23px;
+    font-weight: 400;
+    margin: 0;
+    padding: 9px 0 4px;
+    line-height: 29px;
+}
+.welcome-panel {
+    position: relative;
+    overflow: auto;
+    margin: 16px 0;
+    padding: 23px 10px 0;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    background: #fff;
+    font-size: 14px;
+    line-height: 2.1em;
+}
+.text-box-row {
+    display: inline-block;
+    width: 100%;
+}
+fieldset.scheduler-border {
+    border: 1px groove #ddd !important;
+    padding: 0 1.4em 1.4em 1.4em !important;
+    margin: 0 0 1.5em 0 !important;
+    -webkit-box-shadow: 0px 0px 0px 0px #000;
+    box-shadow: 0px 0px 0px 0px #000;
+}
+
+legend.scheduler-border {
+    font-size: 1.2em !important;
+    font-weight: bold !important;
+    text-align: left !important;
+    width: auto;
+    padding: 0 10px;
+    border-bottom: none;
+}
+.form-control {
+    padding: 2px 6px;
+    outline: 0;
+    height: 30px;
+    border-radius: 0;
+}
+i.fa.fa-question {
+    border: 1px solid;
+    padding: 2px 5px;
+    border-radius: 5px;
+    position: relative;
+}
+.nav-tabs > li > a {
+    margin-right: 2px;
+    line-height: 1.42857143;
+    border: 1px solid rgba(0, 0, 0, 0.188);
+    border-radius: 0;
+    background: #e7e6e3;
+    margin: 0 6px;
+    border-bottom: none;
+    color: #272727;
+    font-size: 15px;
+}
+.nav > li > a:focus, .nav > li > a:hover {
+    text-decoration: none;
+    border: 1px solid rgba(0, 0, 0, 0.188) !important;
+    border-bottom: none !important;
+    background-color: #fff;
+}
+
+
+/***********************/
+
+
+input#price {
+    width: 70%;
+    display: inline;
+    margin-bottom: 20px;
+}
+
+/********Single prduct*****/
+li{ 
+    list-style-type: none;
+}
+.col-md-12 {
+    width: 100%;
+}
+.col-md-5 {
+    width: 41.66666667%;
+    float: left
+
+}
+.col-md-7 {
+    width: 58.33333333%;float: left
+}
+.img-responsive {
+    width: 100%;
+    height: auto;
+}
+.span_2_of_a1 h3 {
+    color: #000;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 700;
+}
+p.in-para {
+    color: #999;
+    font-size: 1em;
+    line-height: 2em;
+    margin: 1em 0;
+    border-bottom: 1px solid #f0f0f0;
+    border-top: 3px double #f0f0f0;
+    padding: 1em 0;
+
+}
+.price_single {
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 1em;
+}
+span.reducedfrom {
+    color: red;
+    font-size: 1.5em;
+    float: left;
+}
+.price_single a {
+    display: inline-block;
+    padding: 0.2em 1.5em;
+    font-size: 1em;
+    text-decoration: none;
+    line-height: 2em;
+    color: #fff;
+    background: red;
+    border-radius: 50px;
+}
+.description {
+    font-size: 14px;
+    line-height: 1.7;
+    padding: 20px 0;
+    display: inline-block;
+    margin: 0;
+    color: #666;
+}
+.span_2_of_a1 h3 {
+    color: #000;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-weight: 700;
+    border-bottom: 3px double #f0f0f0;
+    display: inline-block;
+    margin: 0px 0 15px;
+    padding-bottom: 15px;
+}
+.flex-viewport, .span_2_of_a1.simpleCart_shelfItem {
+    padding: 0 15px;
+}
+.flex-control-thumbs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-control-thumbs li > * {
+    width: 100%;
+    height: auto;
+}
+.flex-control-thumbs li {
+    width: 15%;
+    padding: 10px;
+    cursor: pointer;
+}
+.flex-viewport ul > li {
+    display: none;
+}
+.product-dis {
+    max-width: 1170px;
+    margin: auto;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+.flexslider {
+    border-right: 1px solid #d7d7d7;
+}
+.flex-viewport ul > li.active {
+    display: block;
+}
+h5.coming-soon {
+    color: red;
+    text-align: center;
+}
+/*------Admin edit post atter section--------*/
+ul.no_padding {
+    padding-left: 26px;
+}
+/*------Admin edit post atter section--------*/
+.nested.group_1 {
+    margin-left: 20px;
+}
+
+.nested.group_1 li{
+    list-style: disc;
+}
+
+.nested.group_1 li li{
+    list-style: none !IMPORTANT;
+}
+
+.column-name {width:25%;}
+.column-product_layout{width:13%;padding: 8px 4px !important;}
+.column-posts{width:9%;text-align:left;}
+.column-category_short_code{padding: 8px 3px !important;}
+
+/*----------------*/
+.checkbox label .toggle,.checkbox-inline .toggle{margin-left:-20px;margin-right:5px}
+.toggle{position:relative;overflow:hidden}
+.toggle input[type=checkbox]{display:none}
+.toggle-group{position:absolute;width:200%;top:0;bottom:0;left:0;transition:left .35s;-webkit-transition:left .35s;-moz-user-select:none;-webkit-user-select:none}
+.toggle.off .toggle-group{left:-100%}
+.toggle-on{position:absolute;top:0;bottom:0;left:0;right:50%;margin:0;border:0;border-radius:0}
+.toggle-off{position:absolute;top:0;bottom:0;left:50%;right:0;margin:0;border:0;border-radius:0}
+.toggle-handle{position:relative;margin:0 auto;padding-top:0;padding-bottom:0;height:100%;width:0;border-width:0 1px}
+.toggle.btn{min-width:59px;min-height:34px}
+.toggle-on.btn{padding-right:24px}
+.toggle-off.btn{padding-left:24px}
+.toggle.btn-lg{min-width:79px;min-height:45px}
+.toggle-on.btn-lg{padding-right:31px}
+.toggle-off.btn-lg{padding-left:31px}
+.toggle-handle.btn-lg{width:40px}
+.toggle.btn-sm{min-width:50px;min-height:30px}
+.toggle-on.btn-sm{padding-right:20px}
+.toggle-off.btn-sm{padding-left:20px}
+.toggle.btn-xs{min-width:35px;min-height:22px}
+.toggle-on.btn-xs{padding-right:12px}
+.toggle-off.btn-xs{padding-left:12px}
+
+
+
+/******/
+

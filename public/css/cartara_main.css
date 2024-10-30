@@ -1,0 +1,383 @@
+/**********************************************************************
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ * The grid: Four equal columns that floats next to each other 
+*****************************************************************************/
+
+/*---------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0-modified | 20110126
+   License: none (public domain)
+*/
+/*----------------cn360-section-------------------*/
+
+.cn360-section div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    
+}
+
+
+.cn360-section input[hidden]{
+    display:none;
+}
+
+
+
+.cn360-section ol, .cn360-section.ul {
+    list-style: none;
+}
+
+
+.cn360-section table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.cn360-section textarea {
+    overflow: auto;
+    vertical-align: top;
+    resize: vertical;
+}
+
+/**
+ * Correct `inline-block` display not defined in IE 6/7/8/9 and Firefox 3.
+ */
+/*---------------------------*/
+
+.cn360-section .cn360-row {
+    position: relative;
+    display: flex;
+    align-items: baseline;
+    justify-content: left;
+}
+.cn360-section .cn360-col-md-4 {
+    width: 33%;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 5px;
+
+}
+.cn360-section .products-info h6 {
+    font-size: 12px !important;
+    margin: 0 !important;
+    color: #000 !important;
+    opacity: 1;
+}
+.cn360-section .cn360-thumbnail {
+    position: inherit;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+.cn360-section .cn360-thumbnail_images {
+    height: 250px;
+    text-align: center;
+    overflow: hidden;
+}
+.cn360-section .cn360-thumbnail.product-information .cn360-thumbnail-de {
+    padding: 20px;
+}
+.cn360-section .cn360-thumbnail .cn360-thumbnail-de {
+    opacity: 1;
+    visibility: visible;
+}
+.cn360-section thumbnail.product-information a h5 {
+    color: #0066c0;
+    text-decoration: none !important;
+    /*    font-weight: 500;*/
+}
+.cn360-section .thumbnail.product-information a h5:hover {
+    color: #c45500;
+    text-decoration: underline !important;
+}
+
+
+/*==========================
+Responsive CSS 
+==========================*/
+
+@media(max-width: 767px){
+    .cn360-col-md-4 {
+        width: 100% !important;
+        display: block;
+    }
+    .thumbnail-de{
+        height: auto;
+    }
+    .cn360-row{
+        display: block;
+    }
+}
+/*==========================
+Single page CSS 
+==========================*/
+
+.cn360-col-md-5 {
+    width: 41.66666667%;
+    display: inline-block;
+}
+.cn360-col-md-7 {
+    width: 58.33333333%;
+    display: inline-block;
+}
+.cn360-btn-danger {
+    color: #fff;
+    background-color: #d9534f;
+    /*    border-color: #d43f3a;*/
+    box-shadow: none;
+    border: none;
+}
+.cn360-btn-danger:hover, .cn360-btn-danger:active {
+
+    color: #fff;
+    background-color: #ac2925 ;
+    border-color: #761c19 ;
+}
+.cn360-btn.cn360-btn-danger.add_t_cart {
+    line-height: 20px;
+    padding: 8px 37px ;
+    letter-spacing: .5px ;
+}
+.cn360-btn.cn360-btn-danger.add_t_cart:hover{
+    line-height: 20px;
+    padding: 8px 37px ;
+    letter-spacing: .5px ;
+}
+.cn360-btn {
+    padding: 8px 37px;
+    border-radius: 0;
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.cn360-btn[disabled]{
+    opacity: .65;
+}
+.cn360-img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+#product_link_id{
+    display: none;
+}
+.cn360-section .cln_cart_popup{
+    display: none;
+}
+.cn360-section .cln_cart_popup.in{
+    display: block ;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding-top: 50px;
+    z-index: 9999;
+    background: rgba(0, 0, 0, 0.58);
+}
+.cn360-section .cn360_modal-dialog {
+    width: 70%;
+    margin: auto;
+    background: #fff;
+    padding: 15px;
+    position: relative;
+}
+.cn360-section  .cn360_modal-body {
+    max-height: 70vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+/*================
+Pop-up
+================*/
+.cn360-section .cn360_col-md-2 {
+    float: left;
+    width: 16.66666667%;
+    /*    padding-left: 15px;
+        padding-right: 15px;*/
+}
+.cn360-section .cn360_col-md-5 {
+    width: 40.666667%;
+    float: left;
+}
+.cn360-section .cn360_modal-footer {
+    /*    padding: 15px;*/
+    padding: 15px 0 0 0;
+    text-align: right;
+    border-top: 1px solid #e5e5e5;
+}
+.cn360-section button.cn360_btn.btn-dialog.continue {
+
+    background: #ed6335;
+    color: #fff;
+    /* width: 200px; */
+    border: 1px solid #ccc;
+    padding: 6px 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-right: 6px;
+}
+.cn360-section .cn360-noimage p {
+    margin: 0;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+.cn360-section .pop_right_head h4 {
+    margin: 0 ;
+    padding: 0 ;
+}
+.cn360-section [hidden] {
+    display: none ;
+}
+
+.cn360-section .cn360-noimage {
+    padding: 50% 0;
+    border: 1px solid #ccc;
+    opacity: .5;
+}
+.cn360-section a h3:hover {
+    color: #c45500 ;
+}
+.cn360-section a h3 {
+    color: #23527c ;
+}
+
+
+/*=======Responsive=======*/
+@media(max-width: 1024px){
+    .cn360-section .cn360-btn {
+        padding: 8px 20px;
+        letter-spacing: 1px;
+    }
+}
+@media(max-width: 767px){
+    .cn360-section .cn360-col-md-5 {
+        width: 100%;
+        display: block;
+    }
+    .cn360-section .cn360-col-md-7 {
+        width: 100%;
+        display: block;
+    }
+    .cn360-section .product-dis{
+        display: block;
+    }
+
+.cn360-section button.cn360_btn.btn-dialog.continue {
+    font-size: 10px;
+    padding: 13px 25px !important;
+    margin: 8px auto !important;
+}
+.cn360-section button.chk_btn {
+    padding-right: 35px;
+    padding-top: 8px;
+    padding-bottom: 9px;
+    padding-left: 20px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: 25px;
+    font-size: 8px;
+/*    margin-top: 10px;*/
+}
+.cn360-section .chk_btn svg {
+    width: 24px;
+    height: 24px;
+}
+        /*************22-09-2018**********/
+/*    .chk-2-text {
+    font-size: 6px;
+}*/
+.cn360-section button.chk_btn {
+    padding-top: 9px !important;
+    padding-bottom: 8px !important;
+}
+.cn360-section button.chk_btn {
+    margin: 5px 0 !important;
+}
+.cn360-section button.cn360_btn.btn-dialog.continue {
+    margin: 5px 0;
+}
+/*.cn360-section .cn360_modal-dialog {
+    height: auto%;
+}*/
+.cn360-section button.chk_btn {
+    float: none;
+    margin: auto !important;
+}
+.cn360-section .cn360_modal-footer {
+    text-align: center;
+}
+}
+@media(max-width: 580px){
+    .cn360-section button.chk_btn {
+    margin-top: 10px;
+}
+/*.cn360-section .cn360_modal-dialog {
+    height: auto%;
+}*/
+}
+@media (max-width: 432px){
+/*.cn360-section .cn360_modal-dialog {
+    height: 70%;
+}*/
+.cn360-section button.cn360_btn.btn-dialog.continue {
+    font-size: 10px !important;
+    padding: 11px 29px !important;
+    margin: 8px auto !important;
+}
+.cn360-section button.chk_btn {
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
+}
+.chk_btn {
+    font-size: 10.5px;
+}
+.chk-2-text {
+    font-size: 14px;
+}
+
+}
+@media (max-width: 375px){
+/*.cn360-section .cn360_modal-dialog {
+    height: 74%;
+}
+*/
+.cn360-section button.cn360_btn.btn-dialog.continue {
+    font-size: 9px !important;
+    padding: 11px 29px !important;
+    margin: 8px auto !important;
+}
+.cn360-section button.chk_btn {
+    padding-top: 4px !important;
+    padding-bottom: 4px !important;
+}
+.chk_btn {
+    font-size: 8.5px;
+}
+.chk-2-text {
+    font-size: 12px;
+}
+.cn360-section .cln_cart_popup.in {
+    padding-top: 10px;
+}
+}
